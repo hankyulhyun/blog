@@ -1,0 +1,27 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: false
+
+# Setup
+title:               집에 좀 가자
+tagline:             '퇴근하고 싶은 개발자'
+url:                 http://hankyul.iptime.org
+baseurl:             ''
+paginate:            1
+
+# About/contact
+author:
+  name:              HanKyul, Hyun
+  url:               http://hankyul.iptime.org
+  email:             hankyulhyun@gmail.com
+
+# Custom vars
+version:             1.0.0
+
+#Build Settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+  - jekyll-paginate
