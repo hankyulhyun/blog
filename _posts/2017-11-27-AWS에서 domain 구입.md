@@ -1,6 +1,6 @@
 ---
 layout: post
-category : etc.
+category: AWS 
 tags : [AWS]
 title: AWS에서 domain 구입
 ---
