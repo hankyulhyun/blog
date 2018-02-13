@@ -4,6 +4,11 @@ phases:
   install:
     commands:
       - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist jekyll-feed
+  pre_build:
+    commands:
+      - export LC_ALL="en_US.UTF-8"
+      - locale-gen en_US en_US.UTF-8
+      - dpkg-reconfigure locales
   build:
     commands:
       - echo "******** Building Jekyll site ********"
