@@ -10,6 +10,7 @@ tagline:             '퇴근하고 싶은 개발자'
 url:                 http://hankyul.iptime.org
 baseurl:             ''
 paginate:            1
+encoding:            utf-8
 
 # About/contact
 author:
