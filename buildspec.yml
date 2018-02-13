@@ -7,7 +7,7 @@ phases:
   pre_build:
     commands:
       - export LC_ALL="ko_KR.UTF-8"
-      - locale-gen en_US ko_KR.UTF-8
+      - locale-gen ko_KR ko_KR.UTF-8
       - dpkg-reconfigure locales
   build:
     commands:
