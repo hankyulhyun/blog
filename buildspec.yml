@@ -6,8 +6,8 @@ phases:
       - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist jekyll-feed
   pre_build:
     commands:
-      - export LC_ALL="en_US.UTF-8"
-      - locale-gen en_US en_US.UTF-8
+      - export LC_ALL="ko_KR.UTF-8"
+      - locale-gen en_US ko_KR.UTF-8
       - dpkg-reconfigure locales
   build:
     commands:
