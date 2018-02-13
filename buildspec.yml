@@ -6,11 +6,10 @@ phases:
       - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist jekyll-feed
   pre_build:
     commands:
-      - sudo apt-get update
-      - sudo apt-get --assume-yes install language-pack-ko
-      - locale-gen ko_KR.UTF-8
+      - export LC_ALL="en_US.UTF-8"
+      - locale-gen en_US en_US.UTF-8
       - dpkg-reconfigure locales
-      - update-locale LANG=ko_KR.UTF-8 LC_MESSAGES=POSIX
+      - locale
   build:
     commands:
       - echo "******** Building Jekyll site ********"
