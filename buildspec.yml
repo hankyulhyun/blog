@@ -9,7 +9,6 @@ phases:
       - export LC_ALL="en_US.UTF-8"
       - locale-gen en_US en_US.UTF-8
       - dpkg-reconfigure locales
-      - locale
   build:
     commands:
       - echo "******** Building Jekyll site ********"
