@@ -9,6 +9,8 @@ title: AWS Codebuild로 자동 빌드 구축
 
 AWS S3로 정적 웹 호스팅을 시작했지만 매번 블로그 글을 쓸 때마다 빌드해서 손으로 옮기는건 매우 귀찮은 일이다. 따라서 github에 push 할 때마다 자동으로 빌드하여 배포가 되도록한다. AWS의 codebuild 서비스를 사용할 것이다.
 
+<br/>
+
 ##  빌드 프로젝트 생성
 
 먼저 AWS 콘솔에 로그인하여 codebuild에 들어간 후 프로젝트를 만든다.
@@ -55,12 +57,11 @@ s3에 빌드 결과를 넣는 과정에서 aws console 명령어를 사용해야
 * AWS_ACCESS_KEY_ID
 * AWS_SECRET_ACCESS_KEY 
 
+<br/>
 
 ##  buildspec.yml 생성
 
 블로그 프로젝트의 root 바로 아래에 buildspec.yml 파일을 만들어서 build 방법을 명시해주어야 한다.
-
-<br/>
 
 **buildspec.yml**
 
@@ -94,6 +95,7 @@ phases:
 
 이제 소스를 수정하고 github에 push 하면 자동으로 빌드가 되고 블로그 배포가 진행된다
 
+<br/>
 
 * * * 
 
